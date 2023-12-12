@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'optimized-image' title`, () => {
+  it(`should have the 'image-optimization' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('optimized-image');
+    expect(app.title).toEqual('image-optimization');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, optimized-image');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, image-optimization');
   });
 });
